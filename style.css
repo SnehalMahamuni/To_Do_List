@@ -1,0 +1,103 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial black;
+    font-size: 15px;
+  }
+  .container {
+    width: 100%;
+    height: 500vh;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right,#eac8f7,#c18bd6,#9f46c2);
+  }
+  .todo-app {
+    width: 450px;
+    height: 500px;
+    background-color: papayawhip ;
+    margin-top: 150px;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+  }
+  .todo-app h1 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .todo-icon {
+    position: absolute;
+    height: 70px;
+    top: 35px;
+    left: 320px;
+  }
+  .feilds {
+    height: 40px;
+    width: 100%;
+    background-color:#9f46c2;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .feilds input {
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .feilds button {
+    width: 28%;
+    font-size: 13px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color:#edb7e6;
+    cursor: pointer;
+  }
+  .task-list {
+    margin-top: 20px;
+  }
+  .task-list li {
+    padding: 10px 20px 2px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: relative;
+  }
+  .task-list li::before {
+    content: "";
+    background-image: url("https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png");
+    height: 18px;
+    width: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    left: -6px;
+    top: 8px;
+  }
+  .task-list li.checked {
+    color: grey;
+    text-decoration: line-through;
+  }
+  
+  .task-list li.checked::before {
+    background-image: url("https://png.pngtree.com/png-vector/20191113/ourmid/pngtree-green-check-mark-icon-flat-style-png-image_1986021.jpg");
+    height: 20px;
+    width: 20px;
+  }
+  /* span {
+    position: absolute;
+    right: 0px;
+  } */
